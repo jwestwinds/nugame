@@ -35,20 +35,7 @@ public class clickbutton : MonoBehaviour {
 
 	void OnMouseOver()
 	{
-		//if (Input.GetMouseButtonDown (0) /*&& GetComponent<Renderer>().material.GetColor("_Color").a >= 0.65f*/) {
 			GetComponent<AudioSource> ().Play ();
-
-			/*if(name == "Options")
-			{
-				if(!dispmenu)
-					dispmenu = true;
-				else
-					dispmenu = false;
-			}
-			if(name == "PlayBut")
-				GetComponent<FadeAllAndScene>().fader = true;*/
-
-		//}
 	}
 
 	void OnMouseExit()
@@ -57,7 +44,7 @@ public class clickbutton : MonoBehaviour {
 		
 		if(ourColor.a >= 0.67f)
 		{
-			Debug.Log("Hello World");
+			//Debug.Log("Hello World");
 			ourColor.a = 0.66f;
 			GetComponent<Renderer>().material.SetColor ("_Color", ourColor);
 		}

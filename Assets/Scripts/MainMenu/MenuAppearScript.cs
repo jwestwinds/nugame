@@ -13,7 +13,7 @@ public class MenuAppearScript : MonoBehaviour {
 	}
 	
 	void Update() {
-		if (GetComponent<Display>().open == isShowing) {
+		if (GetComponent<Display>().open != isShowing) {
 			isShowing = !isShowing;
 			menu.SetActive(isShowing);
 		}

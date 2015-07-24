@@ -25,6 +25,12 @@ public class FadeAllAndScene : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+
+	void OnMouseDown()
+	{
+		fader = true;
+	}
+
 	void Update () {
 
 		if (fader) {
@@ -50,6 +56,7 @@ public class FadeAllAndScene : MonoBehaviour {
 				if(cam.GetComponent<Camera>().fieldOfView <= 40)
 				{
 					cam.GetComponent<Camera>().fieldOfView -= 1;
+
 				}
 
 				if(cam.GetComponent<Camera>().fieldOfView <= 1)
